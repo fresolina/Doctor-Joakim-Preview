@@ -14,9 +14,15 @@
     .card { margin-top: 28px; padding: 24px; border-radius: 14px; background: rgba(30, 36, 50, 0.9); border: 1px solid rgba(255, 255, 255, 0.08); }
     .latest { display: inline-block; margin: 8px 0 24px; padding: 12px 20px; border-radius: 8px; background: #e8b04b; color: #1c1406; font-weight: 700; text-decoration: none; }
     ul { list-style: none; padding: 0; margin: 0; }
-    li + li { margin-top: 12px; }
     a.version-link { color: #86aeff; text-decoration: none; font-weight: 600; }
     a.version-link:hover { text-decoration: underline; }
+    li + li { margin-top: 20px; }
+    details { margin-top: 6px; }
+    summary { cursor: pointer; color: #97a0af; font-size: 0.95rem; }
+    .notes { padding: 4px 0 0 18px; color: #c9d0dc; font-size: 0.95rem; line-height: 1.5; }
+    .notes h3 { margin: 12px 0 4px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #e8b04b; }
+    .notes ul { list-style: disc; padding-left: 20px; }
+    .notes li + li { margin-top: 2px; }
   </style>
 </head>
 <body>
@@ -27,7 +33,22 @@
     <section class="card">
       <h2>Builds</h2>
       <ul>
-        <li><a class="version-link" href="versions/1.0.1/">1.0.1  2026-10-07 (8fcf9ca0)</a></li>
+        <li><a class="version-link" href="versions/1.0.2/">1.0.2  2026-10-07 (e3746bbb)</a>
+          <details open><summary>What's new</summary><div class="notes">
+<h3>Bug Fixes</h3>
+<ul>
+<li>Ci and webgl settings</li>
+</ul>
+          </div></details>
+        </li>
+        <li><a class="version-link" href="versions/1.0.1/">1.0.1  2026-10-07 (8fcf9ca0)</a>
+          <details><summary>What's new</summary><div class="notes">
+<h3>Bug Fixes</h3>
+<ul>
+<li>CI build failure</li>
+</ul>
+          </div></details>
+        </li>
       </ul>
     </section>
   </main>
